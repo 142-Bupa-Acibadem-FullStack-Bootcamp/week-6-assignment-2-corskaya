@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+:root {
+    --bg-color: #d0d0ff;
+    --table-size: 300px;
+    --cell-size: var(--table-size) / 3;
+}
+
+body {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 300px;
+    text-align: center;
+    margin: 60px auto 0;
+}
+
+#header {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.table {
+    width: var(--table-size);
+    height: var(--table-size);
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    border: 2px solid black;
+}
+
+.cell {
+    cursor: pointer;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
